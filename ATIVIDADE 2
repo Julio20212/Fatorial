@@ -1,0 +1,35 @@
+package lpa;
+
+import java.util.Scanner;
+
+public class Ativformativa3 {
+
+	public static void main(String[] args) {
+		
+	Scanner ler = new Scanner(System.in);
+	double valor1, valor2, soma;
+	int senham, senhat;
+	
+	System.out.print("Cadastre uma senha (Apenas números): ");
+	senham = ler.nextInt();
+	
+	System.out.print("Digite o primeiro número: ");
+	valor1 = ler.nextDouble();
+	
+	System.out.print("Digite o segundo número: ");
+	valor2 = ler.nextDouble();
+	
+	soma = valor1 + valor2;
+	
+	System.out.print("Digite a sua senha para desbloquear a soma: ");
+	senhat = ler.nextInt();
+	
+	if ( senhat == senham) {
+		System.out.println("A soma é: " + soma);
+	}
+	if ( senhat != senham) {
+		System.out.println("Erro! Senha errada! ");
+	}
+	ler.close();
+	}
+}
